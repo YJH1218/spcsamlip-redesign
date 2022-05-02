@@ -29,4 +29,19 @@ $(document).ready(function(){
   $(".section03 > .content-box > .next-btn").click(function(){
       $('.section03 > .content-box > .slier-wrap > .slider').slick('slickNext');
     })
+
+// 브랜드 리스트
+$('.section05 > .content-box > .right-content > .nav-box > .btn').click(function(){
+  let indexNum = $(this).index()
+    
+    $(this).addClass("active")
+    $(this).siblings().removeClass("active")
+
+  $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).addClass("active")
+  $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).siblings().removeClass("active")
+})
+
+
+
+
 })
