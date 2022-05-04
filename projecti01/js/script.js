@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    $("#fullpage").fullpage({
-
-    });
+    // $("#fullpage").fullpage({
+    //   keyboardScrolling: false,
+    //   scrollOverflow: true,
+    // });
     // 메인 슬라이더
     $('.section01 > .slider-wrap > .slider').slick({
         autoplay: 800,
@@ -18,7 +19,7 @@ $(document).ready(function(){
         $('.section01 > .slider-wrap > .slider').slick('slickNext');
       })
     // 슬라이더 2  
-    $('.section03 > .content-box > .slier-wrap > .slider').slick({
+    $('.section03 > .content-box > .slider-wrap > .slider').slick({
       cssEase: 'linear',
       arrows: false,
       fade: true,
@@ -27,7 +28,7 @@ $(document).ready(function(){
       $('.section03 > .content-box > .slier-wrap > .slider').slick('slickPrev');
     })
   $(".section03 > .content-box > .next-btn").click(function(){
-      $('.section03 > .content-box > .slier-wrap > .slider').slick('slickNext');
+      $('.section03 > .content-box > .slider-wrap > .slider').slick('slickNext');
     })
 
 // 브랜드 리스트
