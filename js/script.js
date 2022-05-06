@@ -1,8 +1,7 @@
 $(document).ready(function(){
-    // $("#fullpage").fullpage({
-    //   keyboardScrolling: false,
-    //   scrollOverflow: true,
-    // });
+    // AOS
+    AOS.init();
+
     // 메인 슬라이더
     $('.section01 > .slider-wrap > .slider').slick({
         autoplay: 800,
@@ -41,8 +40,6 @@ $('.section05 > .content-box > .right-content > .nav-box > .btn').click(function
   $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).addClass("active")
   $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).siblings().removeClass("active")
 })
-
-
 
 
 })
