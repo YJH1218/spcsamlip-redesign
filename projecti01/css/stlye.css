@@ -305,6 +305,7 @@
   margin-top: 60px;
   position: absolute;
   z-index: 99;
+  height: 480px;
 }
 .section02 > .content-box > .News-wrap > .content{
   margin-right: 20px;
