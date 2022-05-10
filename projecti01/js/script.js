@@ -24,7 +24,7 @@ $(document).ready(function(){
       fade: true,
     })
     $(".section03 > .content-box > .prev-btn").click(function(){
-      $('.section03 > .content-box > .slier-wrap > .slider').slick('slickPrev');
+      $('.section03 > .content-box > .slider-wrap > .slider').slick('slickPrev');
     })
   $(".section03 > .content-box > .next-btn").click(function(){
       $('.section03 > .content-box > .slider-wrap > .slider').slick('slickNext');
