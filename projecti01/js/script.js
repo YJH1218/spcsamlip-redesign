@@ -30,9 +30,10 @@ $(document).ready(function(){
       $('.section03 > .content-box > .slider-wrap > .slider').slick('slickNext');
     })
 
+    let indexNum = $(this).index()
+
 // 브랜드 리스트
 $('.section05 > .content-box > .right-content > .nav-box > .btn').click(function(){
-  let indexNum = $(this).index()
     
     $(this).addClass("active")
     $(this).siblings().removeClass("active")
@@ -41,5 +42,28 @@ $('.section05 > .content-box > .right-content > .nav-box > .btn').click(function
   $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).siblings().removeClass("active")
 })
 
+// 모바일 메뉴
+$(".mobile-top-bar-wrap > .service-box .fa-bars").click(function(){
+  $(".nav-2-depth-wrap").addClass("active")
+})
+  $(".fa-xmark").click(function(){
+    $(".nav-2-depth-wrap").removeClass("active")
+  })
 
+  $(".mobile-top-bar-wrap > .service-box .fa-bars").click(function(){
+    $(".nav-2-depth-wrap .nav-box").addClass("active")
+  })
+  $(".nav-2-depth-wrap-bg").click(function(){
+    $(".nav-2-depth-wrap .nav-box").removeClass("active")
+    $(".nav-2-depth-wrap").removeClass("active")
+  })
+
+  $(".nav-2-depth-wrap > .nav-box > .menu-list > li > p").click(function(){
+    $(this).parent().toggleClass("active")
+    $(this).parent().siblings().removeClass("active")
+  })
+  $(".nav-2-depth-wrap > .nav-box > .menu-list > li > ul > li > p").click(function(){
+    $(this).parent().toggleClass("active")
+    $(this).parent().siblings().removeClass("active")
+  })
 })
